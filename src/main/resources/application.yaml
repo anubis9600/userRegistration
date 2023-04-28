@@ -1,0 +1,19 @@
+# port configuration
+server:
+  port: 8082
+
+#database configuration
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/useregistration?createDatabaseIfNotExist=true&userSSl=false&userUnicode=true&useJDBCCompliantTimeZone
+    username: root
+    password: Code_123456789
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
